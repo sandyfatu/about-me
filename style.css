@@ -28,5 +28,6 @@ filter: FlipH;
 }
 
 .button {
-    touch-action: auto;
+text-align: center;
+color: beige;
 }
