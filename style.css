@@ -21,13 +21,14 @@
 }
 
 .header3 {
-text-align: left;
+text-align: right;
 image-rendering: crisp-edges;
 transform: scaleX(-1);
 filter: FlipH;
 }
 
-.button {
+.header4 {
+    touch-action: auto;
 text-align: center;
 color: beige;
 }
