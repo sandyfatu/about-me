@@ -51,3 +51,49 @@
   align-self: flex-end;
   margin-top: 20rem;
 }
+
+.body-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  /* background-color: darksalmon; */
+}
+
+.paragraph {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  background: linear-gradient(to right, #9c899b69, #8eaec0, #cbbfce);
+}
+
+.paragraph img {
+  text-align: justify;
+  width: 100px;
+  height: auto;
+  align-self: right;
+  margin: 0;
+  background-blend-mode: 20%;
+  display: flex;
+}
+
+.paragraph p1 {
+  text-align: justify;
+  display: block;
+  text-align: left;
+  display: flex;
+}
+
+.paragraph p2 {
+  text-align: justify;
+  display: block;
+}
+
+.paragraph p3 {
+  text-align: justify;
+  display: block;
+}
+
+.paragraph p4 {
+  text-align: justify;
+  display: block;
+}
