@@ -57,13 +57,16 @@
   flex-flow: column nowrap;
   gap: 20px;
   /* background-color: darksalmon; */
+  align-content: first baseline;
+  align-content: space-between;
 }
 
 .paragraph {
-  display: flex;
+  display: flexbox;
   flex-flow: column nowrap;
   gap: 20px;
   background: linear-gradient(to right, #9c899b69, #8eaec0, #cbbfce);
+  align-items: right;
 }
 
 .paragraph img {
@@ -73,27 +76,27 @@
   align-self: right;
   margin: 0;
   background-blend-mode: 20%;
-  display: flex;
 }
 
 .paragraph p1 {
-  text-align: justify;
+  text-align: right;
   display: block;
-  text-align: left;
-  display: flex;
+  border-radius: 12px;
+  display: -moz-box;
+  text-align: start;
 }
 
-.paragraph p2 {
+/* .paragraph p2 { */
   text-align: justify;
-  display: block;
+  display: flexbox;
 }
 
-.paragraph p3 {
+/* .paragraph p3 { */
   text-align: justify;
-  display: block;
+  display: flexbox;
 }
 
-.paragraph p4 {
+/* .paragraph p4 { */
   text-align: justify;
-  display: block;
+  display: flexbox;
 }
