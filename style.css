@@ -60,33 +60,34 @@
   border: 1rem;
   justify-content: space-evenly;
   align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  direction: ltr;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  direction: ltr;
+  flex-direction: row;
 }
 
 .flex-container img {
   width: 200px;
   height: auto;
-  align-content: last baseline;
-  margin: 0;
-  background-blend-mode: 20%;
+  margin: 1rem;
+  background-blend-mode: 50%;
+  direction: rtl;
 }
 
-.flex-container .para1 {
-  text-align: left;
+.flex-container p {
+  direction: ltr;
+  flex: block;
+  margin: 1rem;
+  padding: 1rem;
+  text-size-adjust: 15px;
 }
 
-.para2 {
-  text-align: left;
-}
-.para3 {
-  text-align: left;
-}
-
-.para4 {
-  text-align: left;
+.paragraph-container p {
+  float: left;
 }
