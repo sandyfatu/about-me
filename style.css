@@ -53,50 +53,40 @@
 }
 
 .body-container {
+  gap: 15px;
+  background: linear-gradient(to right, #8eaec0, #b33e99, #232d85);
+  padding: 1rem;
+  margin: 1rem;
+  border: 1rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-container {
   display: flex;
-  flex-flow: column nowrap;
-  gap: 20px;
-  /* background-color: darksalmon; */
-  align-content: first baseline;
-  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.paragraph {
-  display: flexbox;
-  flex-flow: column nowrap;
-  gap: 20px;
-  background: linear-gradient(to right, #9c899b69, #8eaec0, #cbbfce);
-  align-items: right;
-}
-
-.paragraph img {
-  text-align: justify;
-  width: 100px;
+.flex-container img {
+  width: 200px;
   height: auto;
-  align-self: right;
+  align-content: last baseline;
   margin: 0;
   background-blend-mode: 20%;
 }
 
-.paragraph p1 {
-  text-align: right;
-  display: block;
-  border-radius: 12px;
-  display: -moz-box;
-  text-align: start;
+.flex-container .para1 {
+  text-align: left;
 }
 
-/* .paragraph p2 { */
-  text-align: justify;
-  display: flexbox;
+.para2 {
+  text-align: left;
+}
+.para3 {
+  text-align: left;
 }
 
-/* .paragraph p3 { */
-  text-align: justify;
-  display: flexbox;
-}
-
-/* .paragraph p4 { */
-  text-align: justify;
-  display: flexbox;
+.para4 {
+  text-align: left;
 }
