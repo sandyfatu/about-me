@@ -32,6 +32,7 @@
   /* order: -1; */
   transform: rotateX(50%);
   shape-outside: shadow(10 10 10 0);
+  box-shadow: 4px 4px 10px 0 rgba(179, 93, 93, 0.5);
 }
 
 .about-me h1 {
@@ -52,11 +53,14 @@
   display: flex;
 }
 
+ul {
+  list-style-type: none;
+  background-color: #333;
+}
 .more button {
   touch-action: auto;
   text-align: right;
   align-self: flex-end;
-  margin-top: 20rem;
 }
 
 .body-container {
@@ -84,9 +88,44 @@
   width: 300px;
   height: 300px;
   border-radius: 10%;
-  background-blend-mode: 70%;
   direction: rtl;
   border-image: fill;
+  box-shadow: 8px 8px 4px 0px rgb(110, 141, 167);
+  animation-duration: 5sec;
+  animation-name: slide;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img {
+  from {
+    background: url(image/IMG_0553.JPG);
+  }
+  to {
+    background: url(image/IMG_0510.JPG);
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 50, 0, 0);
+  padding: 12px;
+  z-index: -1;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .grid-container p {
@@ -94,12 +133,14 @@
   margin: 1rem;
   padding: 1rem;
   font-size: 24px;
+  word-wrap: break-word;
 }
 
 .paragraph-container p {
   float: left;
   grid-template-columns: auto;
   font-size: 24px;
+  word-wrap: break-word;
 }
 
 .footer-container {
@@ -109,6 +150,7 @@
   justify-content: space-between;
   margin: 1rem;
   border-radius: 20px;
+  box-shadow: 5px 8px 16px 0px rgb(113, 113, 161);
 }
 
 .footer {
